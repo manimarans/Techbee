@@ -1,0 +1,8 @@
+<div class="user-item">
+  <div class="avatar"></div>
+  <div class="user-detail">
+    <div *ngFor="let item of user | keyvalue">
+      {{item.key | uppercase}} : {{item.value}}
+    </div>
+  </div>
+</div>

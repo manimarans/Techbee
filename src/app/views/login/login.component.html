@@ -1,0 +1,22 @@
+<div class="login-container">
+  <div class="title">Login</div>
+  <form class="input-container" [formGroup]="this.form" autocomplete="off">
+    <div class="input-group">
+      <input [formControlName]="'username'" required [ngClass]="alertUsername?'alert':''" />
+      <span [ngClass]="alertUsername?'alert':'bar'" ></span>
+      <label>Username</label>
+    </div>
+    <div class="input-group">
+      <input [formControlName]="'password'" type="password" required [ngClass]="alertPassword?'alert':''"/>
+      <span [ngClass]="alertPassword?'alert':'bar'"></span>
+      <label>Password</label>
+    </div>
+    <div class="submit-container">
+      <div class="submit-butn" (click)="submit()">Login</div>
+      <div class="signup-butn" (click)="signUp()">Sign Up</div>
+    </div>
+  </form>
+</div>
+<div class="footer">
+  <label class="content"><i>powered by Techbees</i></label>
+</div>

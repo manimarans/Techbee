@@ -1,0 +1,32 @@
+<div class="signup-container">
+  <div class="title">Sign Up</div>
+  <form class="input-container" [formGroup]="this.form" autocomplete="off">
+    <div class="input-group">
+      <input [formControlName]="'firstName'" required [ngClass]="alertFirstName?'alert':''" />
+      <span [ngClass]="alertFirstName?'alert':'bar'" ></span>
+      <label>FirstName</label>
+    </div>
+    <div class="input-group">
+      <input [formControlName]="'lastName'"/>
+      <label>LastName</label>
+    </div>
+    <div class="input-group">
+      <input [formControlName]="'username'" required [ngClass]="alertUsername?'alert':''" />
+      <span [ngClass]="alertUsername?'alert':'bar'" ></span>
+      <label>Username</label>
+    </div>
+    <div class="input-group">
+      <input [formControlName]="'password'" type="password" required [ngClass]="alertPassword?'alert':''"/>
+      <span [ngClass]="alertPassword?'alert':'bar'"></span>
+      <label>Password</label>
+    </div>
+    <div class="input-group">
+      <input [formControlName]="'confirmPassword'" type="password" required [ngClass]="alertConfirmPassword?'alert':''"/>
+      <span [ngClass]="alertConfirmPassword?'alert':'bar'"></span>
+      <label>Confirm Password</label>
+    </div>
+    <div class="submit-container">
+      <div class="signup-butn" (click)="signUp()">Sign Up</div>
+    </div>
+  </form>
+</div>

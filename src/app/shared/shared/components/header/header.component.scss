@@ -1,0 +1,29 @@
+:host {
+  width: 100%;
+  height: 50px;
+}
+
+.header {
+    display: flex;
+    height: 50px;
+}
+
+.logout {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: url('~/assets/svg/logout.svg');
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+}
+
+.nav-item:hover{
+    cursor: pointer;
+    background-color: #303633;
+}
+
+.highlight{
+   background-color: #345342;
+}

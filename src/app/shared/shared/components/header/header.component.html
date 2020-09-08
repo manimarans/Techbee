@@ -1,0 +1,7 @@
+<div class="header">
+  <div class="nav-item" [ngClass]="isActive(nav)? 'highlight': ''" *ngFor="let nav of navigation">
+    <app-navigation [data]="nav"></app-navigation>
+  </div>
+  <div class="logout" title="click here to logout" (click)="logout()">
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.header-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background: black;
+}
+
+.footer-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 30px;
+    color: white;
+    background: black;
+}
+
+.body-container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    top: 50px;
+}
